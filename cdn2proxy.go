@@ -44,7 +44,7 @@ func StartServer(port, destAddr, wspath string, logOutput io.Writer) (err error)
 	// HTTP server
 	Logger.Printf("websocket server listening on 127.0.0.1:%s", port)
 	http.HandleFunc("/"+wspath, serveWS)
-	err = http.ListenAndServe("127.0.0.1:"+port, nil)
+	err = http.ListenAndServe("0.0.0.0:"+port, nil)
 	if err != nil {
 		Logger.Fatal(err)
 	}
