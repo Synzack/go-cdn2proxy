@@ -1,4 +1,4 @@
-module github.com/jm33-m0/go-cdn2proxy
+module github.com/Synzack/go-cdn2proxy
 
 go 1.15
 
